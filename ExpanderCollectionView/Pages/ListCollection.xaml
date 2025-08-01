@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExpanderCollectionView.Pages.ListCollection"
+             xmlns:headmodel="clr-namespace:ExpanderCollectionView.Models.ExpanderHeader"
+             xmlns:behaive="clr-namespace:ExpanderCollectionView.Behavior"
+             xmlns:vm="clr-namespace:ExpanderCollectionView.ViewModels"
+             xmlns:components="clr-namespace:ExpanderCollectionView.Components"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="">
+    
+    <Grid VerticalOptions="Fill">
+        <ListView x:Name="MyListView"
+          ItemsSource="{Binding DisplayItems}"
+          HasUnevenRows="True"
+          SeparatorVisibility="None"
+          VerticalOptions="FillAndExpand"                  
+          CachingStrategy="RetainElement">
+            
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <toolkit:Expander>
+                            <toolkit:Expander.Header>
+                                <Border x:DataType="headmodel:ExpanderHeader" Style="{StaticResource ExpanderHeaderStyles}">
+                                    <HorizontalStackLayout>
+                                        <Label Text="{Binding HeaderFields[Name]}" FontAttributes="Bold" FontSize="16"/>
+                                        <components:PendingStateIconView
+                                                    PendingState="{Binding HeaderFields[PendingState]}"
+                                                    Clicked="OnPendingIconClicked"/>
+                                    </HorizontalStackLayout>
+                                </Border>
+                            </toolkit:Expander.Header>
+
+                            <toolkit:Expander.Content>
+                                <ContentView x:Name="LazyContainer"
+                                     HeightRequest="0"
+                                     IsVisible="False" />
+                            </toolkit:Expander.Content>
+
+                            <toolkit:Expander.Behaviors>
+                                <behaive:ExpanderLazyLoadBehavior />
+                            </toolkit:Expander.Behaviors>
+                        </toolkit:Expander>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <components:BottomDrawerSheet x:Name="bottomsheet"   />
+                                  
+    </Grid>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/Colors/Colors.xaml;assembly=ExpanderCollectionView"/>
+                <ResourceDictionary Source="/Resources/Styles/ListCollectionStyles.xaml;assembly=ExpanderCollectionView"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+</ContentPage>

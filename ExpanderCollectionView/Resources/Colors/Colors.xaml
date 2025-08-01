@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!-- 🎨 رنگ‌های پرکاربرد -->
+    <Color x:Key="MyPrimary">#6200EE</Color>
+    <Color x:Key="MyAccent">#03DAC5</Color>
+    <Color x:Key="MyLightGray">#F7F7F7</Color>
+    <Color x:Key="MyGray">#DDDDDD</Color>
+    <Color x:Key="MyDanger">#FF5252</Color>
+
+</ResourceDictionary>

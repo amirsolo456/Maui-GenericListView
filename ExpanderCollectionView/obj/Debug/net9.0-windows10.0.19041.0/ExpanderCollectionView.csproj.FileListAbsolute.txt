@@ -1,0 +1,16 @@
+X:\Expander\ExpanderCollectionView\ExpanderCollectionView\bin\Debug\net9.0-windows10.0.19041.0\ExpanderCollectionView.deps.json
+X:\Expander\ExpanderCollectionView\ExpanderCollectionView\bin\Debug\net9.0-windows10.0.19041.0\ExpanderCollectionView.dll
+X:\Expander\ExpanderCollectionView\ExpanderCollectionView\bin\Debug\net9.0-windows10.0.19041.0\ExpanderCollectionView.pdb
+X:\Expander\ExpanderCollectionView\ExpanderCollectionView\bin\Debug\net9.0-windows10.0.19041.0\Microsoft.Web.WebView2.Core.dll
+X:\Expander\ExpanderCollectionView\ExpanderCollectionView\bin\Debug\net9.0-windows10.0.19041.0\Microsoft.Web.WebView2.Core.Projection.dll
+X:\Expander\ExpanderCollectionView\ExpanderCollectionView\obj\Debug\net9.0-windows10.0.19041.0\ExpanderCollectionView.csproj.AssemblyReference.cache
+X:\Expander\ExpanderCollectionView\ExpanderCollectionView\obj\Debug\net9.0-windows10.0.19041.0\ExpanderCollectionView.GeneratedMSBuildEditorConfig.editorconfig
+X:\Expander\ExpanderCollectionView\ExpanderCollectionView\obj\Debug\net9.0-windows10.0.19041.0\ExpanderCollectionView.AssemblyInfoInputs.cache
+X:\Expander\ExpanderCollectionView\ExpanderCollectionView\obj\Debug\net9.0-windows10.0.19041.0\ExpanderCollectionView.AssemblyInfo.cs
+X:\Expander\ExpanderCollectionView\ExpanderCollectionView\obj\Debug\net9.0-windows10.0.19041.0\ExpanderCollectionView.csproj.CoreCompileInputs.cache
+X:\Expander\ExpanderCollectionView\ExpanderCollectionView\obj\Debug\net9.0-windows10.0.19041.0\XamlC.stamp
+X:\Expander\ExpanderCollectionView\ExpanderCollectionView\obj\Debug\net9.0-windows10.0.19041.0\Expander.7428BCDF.Up2Date
+X:\Expander\ExpanderCollectionView\ExpanderCollectionView\obj\Debug\net9.0-windows10.0.19041.0\ExpanderCollectionView.dll
+X:\Expander\ExpanderCollectionView\ExpanderCollectionView\obj\Debug\net9.0-windows10.0.19041.0\refint\ExpanderCollectionView.dll
+X:\Expander\ExpanderCollectionView\ExpanderCollectionView\obj\Debug\net9.0-windows10.0.19041.0\ExpanderCollectionView.pdb
+X:\Expander\ExpanderCollectionView\ExpanderCollectionView\obj\Debug\net9.0-windows10.0.19041.0\ref\ExpanderCollectionView.dll

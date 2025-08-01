@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sheet="clr-namespace:Syncfusion.Maui.Toolkit.BottomSheet;assembly=Syncfusion.Maui.Toolkit"
+             x:Class="ExpanderCollectionView.Components.BottomDrawerSheet"
+             x:Name="btnsheet">
+
+    <sheet:SfBottomSheet x:Name="bottomsheet" GrabberAreaHeight="0" 
+                         AnimationDuration="200" 
+                         ContentWidthMode="Full"                          
+                         ShowGrabber="False"  CornerRadius="10" EnableSwiping="False" CollapsedHeight="200"   IsOpen="False" StateChanged="bottomsheet_StateChanged" IsModal="False">
+        <sheet:SfBottomSheet.BottomSheetContent>
+            <VerticalStackLayout VerticalOptions="Fill" FlowDirection="RightToLeft">
+                <Button Text="X" Clicked="Button_Clicked" HorizontalOptions="Start" BorderColor="Black" BorderWidth="2" TextColor="Black" BackgroundColor="Transparent"/>
+                <Label Text="{Binding ContentText,Source={x:Reference btnsheet}}" TextColor="Red"/>
+            </VerticalStackLayout>
+        </sheet:SfBottomSheet.BottomSheetContent>
+    </sheet:SfBottomSheet>
+</ContentView>
+
+   
